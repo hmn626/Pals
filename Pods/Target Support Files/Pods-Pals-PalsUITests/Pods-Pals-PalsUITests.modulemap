@@ -1,0 +1,6 @@
+framework module Pods_Pals_PalsUITests {
+  umbrella header "Pods-Pals-PalsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

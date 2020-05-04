@@ -1,0 +1,6 @@
+framework module Pods_PalsTests {
+  umbrella header "Pods-PalsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
