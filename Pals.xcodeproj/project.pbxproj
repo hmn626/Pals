@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091EDEF324610E560037E1A0 /* DashboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDEF224610E560037E1A0 /* DashboardBuilder.swift */; };
+		091EDEF524610EB90037E1A0 /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDEF424610EB90037E1A0 /* DashboardPresenter.swift */; };
+		091EDEF724610ED30037E1A0 /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDEF624610ED30037E1A0 /* DashboardInteractor.swift */; };
+		091EDEFA24610EF20037E1A0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDEF824610EF20037E1A0 /* DashboardView.swift */; };
+		091EDEFB24610EF20037E1A0 /* DashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091EDEF924610EF20037E1A0 /* DashboardView.xib */; };
+		091EDEFE246111A90037E1A0 /* PalsTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDEFD246111A90037E1A0 /* PalsTabController.swift */; };
 		09DC4F10246092D7009C08A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC4F0F246092D7009C08A7 /* AppDelegate.swift */; };
 		09DC4F12246092D7009C08A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC4F11246092D7009C08A7 /* SceneDelegate.swift */; };
 		09DC4F17246092D7009C08A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DC4F15246092D7009C08A7 /* Main.storyboard */; };
@@ -38,6 +44,12 @@
 
 /* Begin PBXFileReference section */
 		03B235C4465FB6803FAFBB89 /* Pods-Pals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pals.release.xcconfig"; path = "Target Support Files/Pods-Pals/Pods-Pals.release.xcconfig"; sourceTree = "<group>"; };
+		091EDEF224610E560037E1A0 /* DashboardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardBuilder.swift; sourceTree = "<group>"; };
+		091EDEF424610EB90037E1A0 /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		091EDEF624610ED30037E1A0 /* DashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		091EDEF824610EF20037E1A0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		091EDEF924610EF20037E1A0 /* DashboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardView.xib; sourceTree = "<group>"; };
+		091EDEFD246111A90037E1A0 /* PalsTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalsTabController.swift; sourceTree = "<group>"; };
 		09DC4F0C246092D7009C08A7 /* Pals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DC4F0F246092D7009C08A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DC4F11246092D7009C08A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,8 +116,78 @@
 		091EDEEA24609EE70037E1A0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				091EDEEC24610E1F0037E1A0 /* Common */,
+				091EDEEB24610E190037E1A0 /* Modules */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		091EDEEB24610E190037E1A0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				091EDEED24610E290037E1A0 /* Dashboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		091EDEEC24610E1F0037E1A0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				091EDEFC246111770037E1A0 /* TabBarController */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		091EDEED24610E290037E1A0 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				091EDEF124610E420037E1A0 /* Builder */,
+				091EDEF024610E3C0037E1A0 /* Presenter */,
+				091EDEEF24610E350037E1A0 /* Interactor */,
+				091EDEEE24610E310037E1A0 /* View */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		091EDEEE24610E310037E1A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				091EDEF824610EF20037E1A0 /* DashboardView.swift */,
+				091EDEF924610EF20037E1A0 /* DashboardView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		091EDEEF24610E350037E1A0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				091EDEF624610ED30037E1A0 /* DashboardInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		091EDEF024610E3C0037E1A0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				091EDEF424610EB90037E1A0 /* DashboardPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		091EDEF124610E420037E1A0 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				091EDEF224610E560037E1A0 /* DashboardBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		091EDEFC246111770037E1A0 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				091EDEFD246111A90037E1A0 /* PalsTabController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 		09DC4F03246092D7009C08A7 = {
@@ -292,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09DC4F1C246092D8009C08A7 /* LaunchScreen.storyboard in Resources */,
+				091EDEFB24610EF20037E1A0 /* DashboardView.xib in Resources */,
 				09DC4F19246092D8009C08A7 /* Assets.xcassets in Resources */,
 				09DC4F17246092D7009C08A7 /* Main.storyboard in Resources */,
 			);
@@ -438,8 +521,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091EDEF724610ED30037E1A0 /* DashboardInteractor.swift in Sources */,
+				091EDEFA24610EF20037E1A0 /* DashboardView.swift in Sources */,
 				09DC4F10246092D7009C08A7 /* AppDelegate.swift in Sources */,
+				091EDEFE246111A90037E1A0 /* PalsTabController.swift in Sources */,
+				091EDEF324610E560037E1A0 /* DashboardBuilder.swift in Sources */,
 				09DC4F12246092D7009C08A7 /* SceneDelegate.swift in Sources */,
+				091EDEF524610EB90037E1A0 /* DashboardPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,7 +703,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JG98S5E585;
-				INFOPLIST_FILE = Pals/Info.plist;
+				INFOPLIST_FILE = Pals/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -634,7 +722,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JG98S5E585;
-				INFOPLIST_FILE = Pals/Info.plist;
+				INFOPLIST_FILE = Pals/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
